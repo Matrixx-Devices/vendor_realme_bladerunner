@@ -516,9 +516,6 @@ PRODUCT_COPY_FILES += \
     vendor/realme/bladerunner/proprietary/odm/etc/sensor/config/kona_qrd_sx933x_0.json:$(TARGET_COPY_OUT_ODM)/etc/sensor/config/kona_qrd_sx933x_0.json \
     vendor/realme/bladerunner/proprietary/odm/etc/sensor/sensor_config.json:$(TARGET_COPY_OUT_ODM)/etc/sensor/sensor_config.json \
     vendor/realme/bladerunner/proprietary/odm/etc/wifi/bdwlan.elf:$(TARGET_COPY_OUT_ODM)/etc/wifi/bdwlan.elf \
-    vendor/realme/bladerunner/proprietary/odm/etc/wifi/bin_version:$(TARGET_COPY_OUT_ODM)/etc/wifi/bin_version \
-    vendor/realme/bladerunner/proprietary/odm/etc/wifi/regdb.bin:$(TARGET_COPY_OUT_ODM)/etc/wifi/regdb.bin \
-    vendor/realme/bladerunner/proprietary/odm/etc/wifi/regdb_version:$(TARGET_COPY_OUT_ODM)/etc/wifi/regdb_version \
     vendor/realme/bladerunner/proprietary/odm/firmware/100ms_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/100ms_RTP.bin \
     vendor/realme/bladerunner/proprietary/odm/firmware/120ms_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/120ms_RTP.bin \
     vendor/realme/bladerunner/proprietary/odm/firmware/140ms_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/140ms_RTP.bin \
@@ -607,6 +604,7 @@ PRODUCT_COPY_FILES += \
     vendor/realme/bladerunner/proprietary/odm/lib64/camera/com.qti.tuned.sm8250_truly_hi846.bin:$(TARGET_COPY_OUT_ODM)/lib64/camera/com.qti.tuned.sm8250_truly_hi846.bin \
     vendor/realme/bladerunner/proprietary/odm/lib64/camera/com.qti.tuned.sm8250_truly_hi846_19795.bin:$(TARGET_COPY_OUT_ODM)/lib64/camera/com.qti.tuned.sm8250_truly_hi846_19795.bin \
     vendor/realme/bladerunner/proprietary/odm/lib64/camera/com.qti.tuned.sm8250_truly_imx471.bin:$(TARGET_COPY_OUT_ODM)/lib64/camera/com.qti.tuned.sm8250_truly_imx471.bin \
+    vendor/realme/bladerunner/proprietary/odm/vendor/etc/wifi/WCNSS_qcom_cfg.ini:$(TARGET_COPY_OUT_ODM)/vendor/etc/wifi/WCNSS_qcom_cfg.ini \
     vendor/realme/bladerunner/proprietary/odm/vendor/firmware/ancap64.b00:$(TARGET_COPY_OUT_ODM)/vendor/firmware/ancap64.b00 \
     vendor/realme/bladerunner/proprietary/odm/vendor/firmware/ancap64.b01:$(TARGET_COPY_OUT_ODM)/vendor/firmware/ancap64.b01 \
     vendor/realme/bladerunner/proprietary/odm/vendor/firmware/ancap64.b02:$(TARGET_COPY_OUT_ODM)/vendor/firmware/ancap64.b02 \
@@ -625,12 +623,12 @@ PRODUCT_COPY_FILES += \
     vendor/realme/bladerunner/proprietary/odm/vendor/firmware/goodixfp.b06:$(TARGET_COPY_OUT_ODM)/vendor/firmware/goodixfp.b06 \
     vendor/realme/bladerunner/proprietary/odm/vendor/firmware/goodixfp.b07:$(TARGET_COPY_OUT_ODM)/vendor/firmware/goodixfp.b07 \
     vendor/realme/bladerunner/proprietary/odm/vendor/firmware/goodixfp.mdt:$(TARGET_COPY_OUT_ODM)/vendor/firmware/goodixfp.mdt \
+    vendor/realme/bladerunner/proprietary/product/etc/sysconfig/com.android.hotwordenrollment.common.util.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/com.android.hotwordenrollment.common.util.xml \
     vendor/realme/bladerunner/proprietary/system/etc/permissions/privapp-permissions-qti.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-qti.xml \
     vendor/realme/bladerunner/proprietary/system/etc/sysconfig/qti_whitelist.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/qti_whitelist.xml \
     vendor/realme/bladerunner/proprietary/system_ext/etc/dpm/dpm.conf:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/dpm/dpm.conf \
     vendor/realme/bladerunner/proprietary/system_ext/etc/init/dpmd.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/dpmd.rc \
     vendor/realme/bladerunner/proprietary/system_ext/etc/init/tcmd.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/tcmd.rc \
-    vendor/realme/bladerunner/proprietary/system_ext/etc/init/wfdservice.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/wfdservice.rc \
     vendor/realme/bladerunner/proprietary/system_ext/etc/permissions/com.qti.dpmframework.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.qti.dpmframework.xml \
     vendor/realme/bladerunner/proprietary/system_ext/etc/permissions/dpmapi.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/dpmapi.xml \
     vendor/realme/bladerunner/proprietary/system_ext/etc/permissions/qcrilhook.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/qcrilhook.xml \
@@ -638,9 +636,7 @@ PRODUCT_COPY_FILES += \
     vendor/realme/bladerunner/proprietary/system_ext/etc/permissions/qti_permissions.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/qti_permissions.xml \
     vendor/realme/bladerunner/proprietary/system_ext/etc/permissions/telephony_system-ext_privapp-permissions-qti.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/telephony_system-ext_privapp-permissions-qti.xml \
     vendor/realme/bladerunner/proprietary/system_ext/etc/permissions/vendor.qti.ims.rcsservice.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/vendor.qti.ims.rcsservice.xml \
-    vendor/realme/bladerunner/proprietary/system_ext/etc/permissions/wfd-system-ext-privapp-permissions-qti.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/wfd-system-ext-privapp-permissions-qti.xml \
     vendor/realme/bladerunner/proprietary/system_ext/etc/seccomp_policy/tcmd.policy:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/seccomp_policy/tcmd.policy \
-    vendor/realme/bladerunner/proprietary/system_ext/etc/seccomp_policy/wfdservice64.policy:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/seccomp_policy/wfdservice64.policy \
     vendor/realme/bladerunner/proprietary/system_ext/etc/sysconfig/qti_telephony_system_packages_config.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/sysconfig/qti_telephony_system_packages_config.xml \
     vendor/realme/bladerunner/proprietary/system_ext/etc/sysconfig/qti_whitelist_system_ext.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/sysconfig/qti_whitelist_system_ext.xml \
     vendor/realme/bladerunner/proprietary/vendor/etc/ArmHDCP_QTI_Android.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/ArmHDCP_QTI_Android.cfg \
@@ -751,6 +747,7 @@ PRODUCT_COPY_FILES += \
     vendor/realme/bladerunner/proprietary/vendor/etc/perf/targetconfig.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/targetconfig.xml \
     vendor/realme/bladerunner/proprietary/vendor/etc/perf/targetresourceconfigs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/targetresourceconfigs.xml \
     vendor/realme/bladerunner/proprietary/vendor/etc/permissions/vendor-qti-hardware-sensorscalibrate.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/vendor-qti-hardware-sensorscalibrate.xml \
+    vendor/realme/bladerunner/proprietary/vendor/etc/powerhint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.xml \
     vendor/realme/bladerunner/proprietary/vendor/etc/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt \
     vendor/realme/bladerunner/proprietary/vendor/etc/qdcm_calib_data_19795_samsung_AMS678UW01_dsc_cmd_mode_panel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_19795_samsung_AMS678UW01_dsc_cmd_mode_panel.xml \
     vendor/realme/bladerunner/proprietary/vendor/etc/qdcm_calib_data_samsung_AMS678UW01_dsc_cmd_mode_panel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_samsung_AMS678UW01_dsc_cmd_mode_panel.xml \
@@ -831,6 +828,8 @@ PRODUCT_COPY_FILES += \
     vendor/realme/bladerunner/proprietary/vendor/etc/ssg/tz_whitelist.json:$(TARGET_COPY_OUT_VENDOR)/etc/ssg/tz_whitelist.json \
     vendor/realme/bladerunner/proprietary/vendor/etc/thermal-engine.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine.conf \
     vendor/realme/bladerunner/proprietary/vendor/etc/wfdconfig.xml:$(TARGET_COPY_OUT_VENDOR)/etc/wfdconfig.xml \
+    vendor/realme/bladerunner/proprietary/vendor/etc/wifi/p2p_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/p2p_supplicant_overlay.conf \
+    vendor/realme/bladerunner/proprietary/vendor/etc/wifi/wpa_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wpa_supplicant_overlay.conf \
     vendor/realme/bladerunner/proprietary/vendor/etc/xtra_root_cert.pem:$(TARGET_COPY_OUT_VENDOR)/etc/xtra_root_cert.pem \
     vendor/realme/bladerunner/proprietary/vendor/etc/xtwifi.conf:$(TARGET_COPY_OUT_VENDOR)/etc/xtwifi.conf \
     vendor/realme/bladerunner/proprietary/vendor/firmware/CAMERA_ICP.elf:$(TARGET_COPY_OUT_VENDOR)/firmware/CAMERA_ICP.elf \
@@ -924,7 +923,12 @@ PRODUCT_PACKAGES += \
     libperfconfig \
     libperfgluelayer \
     libperfioctl \
+    libqc2vppfilter \
     libqcmaputils \
+    libqcodec2_base \
+    libqcodec2_basecodec \
+    libqcodec2_platform \
+    libqcodec2_utils \
     libqdi \
     libqdp \
     libqmi \
@@ -958,10 +962,12 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.bluetooth_sar@1.0 \
     vendor.qti.hardware.bluetooth_sar@1.1 \
     vendor.qti.hardware.dsp@1.0 \
+    vendor.qti.hardware.qconfig@1.0 \
     vendor.qti.hardware.vpp@1.1 \
     vendor.qti.hardware.vpp@1.2 \
     vendor.qti.hardware.vpp@1.3 \
     vendor.qti.hardware.vpp@1.4 \
+    vendor.qti.hardware.vpp@2.0 \
     vendor.qti.memory.pasrmanager@1.0 \
     vendor.qti.memory.pasrmanager@1.1 \
     sound_trigger.primary.kona \
@@ -987,13 +993,9 @@ PRODUCT_PACKAGES += \
     libmmrtpdecoder_proprietary \
     libmmrtpencoder_proprietary \
     libmulawdec \
-    libqcodec2_base \
-    libqcodec2_basecodec \
     libqcodec2_core \
-    libqcodec2_platform \
-    libqcodec2_utils \
     libqcodec2_v4l2codec \
-    libqtigef_vendor \
+    libqtigef \
     libwfdcodecv4l2_proprietary \
     libwfdcommonutils_proprietary \
     libwfdconfigutils_proprietary \
@@ -1038,7 +1040,6 @@ PRODUCT_PACKAGES += \
     com.qti.node.memcpy \
     com.qti.node.stich \
     com.qti.node.swec \
-    com.qti.node.swfusion \
     com.qti.node.swregistration \
     com.qti.stats.aec \
     com.qti.stats.aecwrapper \
@@ -1069,9 +1070,7 @@ PRODUCT_PACKAGES += \
     deviceInfoServiceModule \
     android.hardware.gatekeeper@1.0-impl-qti \
     android.hardware.gnss@2.1-impl-qti \
-    camera.qcom \
     com.dsi.ant@1.0-impl \
-    com.qti.chi.override \
     vendor.qti.gnss@4.0-impl \
     vendor.qti.hardware.alarm@1.0-impl \
     vendor.qti.hardware.qseecom@1.0-impl \
@@ -1116,10 +1115,8 @@ PRODUCT_PACKAGES += \
     libcamxfdalgo \
     libcamxfdengine \
     libcamxifestriping \
-    libcamximageformatutils \
     libcamxncs \
     libcamxstatscore \
-    libcamxswispiqmodule \
     libcamxswprocessalgo \
     libcamxtintlessalgo \
     libcdfw \
@@ -1174,7 +1171,6 @@ PRODUCT_PACKAGES += \
     libmdmimgload \
     libmeters \
     libmidasserviceintf \
-    libmidasserviceintf_aidl \
     libminkdescriptor \
     libminksocket \
     libmmcamera_faceproc \
@@ -1289,7 +1285,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.gnss@4.0 \
     vendor.qti.hardware.alarm@1.0 \
     vendor.qti.hardware.cacert@1.0 \
-    vendor.qti.hardware.camera.postproc@1.0-service-impl \
     vendor.qti.hardware.data.cne.internal.api@1.0 \
     vendor.qti.hardware.data.cne.internal.constants@1.0 \
     vendor.qti.hardware.data.cne.internal.server@1.0 \
@@ -1349,24 +1344,24 @@ PRODUCT_PACKAGES += \
     vendor.qti.imsrtpservice@3.0_vendor \
     vendor.qti.latency@2.0 \
     vendor.qti.latency@2.1 \
-    capi_v2_aptX_CLHDADV_Encoder \
-    capi_v2_aptX_CLHDAD_Speech_Decoder \
-    libQ6MSFR_manager_skel \
-    libapps_mem_heap \
-    libbitml_nsp_skel \
-    libcamera_nn_skel \
-    libcvpdsp_skel \
-    libdspCV_skel \
-    libdsp_streamer_binning \
-    libfastcvadsp \
-    libfastcvdsp_skel \
-    libhexagon_nn_skel \
-    libosie_skel \
-    libproxy_skel \
-    libscveObjectSegmentation_skel \
-    libscveT2T_skel \
-    libsns_device_mode_skel \
-    libsns_low_lat_stream_skel \
+    vendor_lib_rfsa_adsp_capi_v2_aptX_CLHDADV_Encoder_so \
+    vendor_lib_rfsa_adsp_capi_v2_aptX_CLHDAD_Speech_Decoder_so \
+    vendor_lib_rfsa_adsp_libQ6MSFR_manager_skel_so \
+    vendor_lib_rfsa_adsp_libapps_mem_heap_so \
+    vendor_lib_rfsa_adsp_libbitml_nsp_skel_so \
+    vendor_lib_rfsa_adsp_libcamera_nn_skel_so \
+    vendor_lib_rfsa_adsp_libcvpdsp_skel_so \
+    vendor_lib_rfsa_adsp_libdspCV_skel_so \
+    vendor_lib_rfsa_adsp_libdsp_streamer_binning_so \
+    vendor_lib_rfsa_adsp_libfastcvadsp_so \
+    vendor_lib_rfsa_adsp_libfastcvdsp_skel_so \
+    vendor_lib_rfsa_adsp_libhexagon_nn_skel_so \
+    vendor_lib_rfsa_adsp_libosie_skel_so \
+    vendor_lib_rfsa_adsp_libproxy_skel_so \
+    vendor_lib_rfsa_adsp_libscveObjectSegmentation_skel_so \
+    vendor_lib_rfsa_adsp_libscveT2T_skel_so \
+    vendor_lib_rfsa_adsp_libsns_device_mode_skel_so \
+    vendor_lib_rfsa_adsp_libsns_low_lat_stream_skel_so \
     vendor.qti.diaghal@1.0 \
     com.qualcomm.qti.dpm.api@1.0 \
     lib-imsvideocodec \
@@ -1382,30 +1377,9 @@ PRODUCT_PACKAGES += \
     libimsmedia_jni \
     libmmosal \
     libmmparser_lite \
-    libmmrtpdecoder \
-    libmmrtpencoder \
-    libwfdavenhancements \
-    libwfdclient \
-    libwfdcommonutils \
-    libwfdconfigutils \
-    libwfddisplayconfig \
-    libwfdmminterface \
-    libwfdmmsink \
-    libwfdmmsrc_system \
-    libwfdnative \
-    libwfdrtsp \
-    libwfdservice \
-    libwfdsinksm \
-    libwfduibcinterface \
-    libwfduibcsink \
-    libwfduibcsinkinterface \
-    libwfduibcsrc \
-    libwfduibcsrcinterface \
     vendor.qti.ImsRtpService-V1-ndk \
     vendor.qti.hardware.dpmaidlservice-V1-ndk \
     vendor.qti.hardware.dpmservice@1.0 \
-    vendor.qti.hardware.wifidisplaysession@1.0 \
-    vendor.qti.hardware.wifidisplaysession_aidl-V1-ndk \
     vendor.qti.imsrtpservice@3.0 \
     vendor.qti.imsrtpservice@3.1 \
     libDeVIS \
@@ -1423,11 +1397,8 @@ PRODUCT_PACKAGES += \
     android.hardware.secure_element@1.0-impl \
     com.qti.sensor.gc8054 \
     com.qti.sensor.hi846 \
-    com.qti.sensor.imx471 \
     com.qti.sensor.imx616 \
     com.qti.sensor.ov02a1b \
-    com.qti.sensor.ov02b \
-    com.qti.sensor.ov64b \
     com.qti.sensor.s5k3m5sx \
     com.qti.sensor.s5kgw1 \
     com.oplus.node.aiaftrack \
@@ -1452,8 +1423,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.esepowermanager@1.1-impl \
     lib-virtual-modem-protos \
     lib2DSlender \
-    libAlgoInterface \
-    libAlgoProcess \
     libAncFilter \
     libAncHumBokeh \
     libAncHumBokehPost \
@@ -1464,7 +1433,6 @@ PRODUCT_PACKAGES += \
     libAncSegBaseSdk \
     libAncSegmentSdk \
     libBokehPre \
-    libCOppLceTonemapAPI \
     libEIS \
     libFDClite \
     libFaceBeautyCap \
@@ -1484,7 +1452,6 @@ PRODUCT_PACKAGES += \
     libPerfectlyClearCruxOpt \
     libPlatformValidatorShared \
     libPolarrRender \
-    libPreviewDecisionOld \
     libQnnHtpAltPrepStub \
     libQnnHtpStub \
     libRedeyeReduce \
@@ -1505,7 +1472,6 @@ PRODUCT_PACKAGES += \
     libVideoEnhance \
     libWaterMark \
     libWaterMode \
-    libYTCommon \
     lib_rectify \
     libaisal \
     libaisd \
@@ -1516,7 +1482,6 @@ PRODUCT_PACKAGES += \
     libancbase_rt_retain \
     libancbase_segbase \
     libancbase_segment \
-    libaps_frame_registration \
     libapsdarksight \
     libapsexif \
     libapsjpeg \
@@ -1617,7 +1582,6 @@ PRODUCT_PACKAGES += \
     sensors.hal.tof \
     vendor.oplus.hardware.appradio@1.0 \
     vendor.oplus.hardware.biometrics.fingerprint@2.1_odm \
-    vendor.oplus.hardware.cameraextension-V1-service-impl \
     vendor.oplus.hardware.cameraextension@1.0-service-impl \
     vendor.oplus.hardware.cammidasservice-V1-ndk_platform_odm \
     vendor.oplus.hardware.commondcs@1.0 \
@@ -1634,29 +1598,29 @@ PRODUCT_PACKAGES += \
     vendor.pixelworks.hardware.feature@1.0 \
     vendor.qti.esepowermanager@1.0 \
     vendor.qti.esepowermanager@1.1 \
-    libhta_dsp_skel \
-    libc++.so \
-    libc++abi.so \
-    libinterstellar_skel \
-    libktvdrc \
-    libktveffect \
-    libktveq \
-    libktvns \
-    libktvpitchshift \
-    libktvreverb \
-    libktvvolume \
+    odm_lib_rfsa_adsp_hta_lib_libhta_dsp_skel_so \
+    odm_lib_rfsa_adsp_libc++_so_1 \
+    odm_lib_rfsa_adsp_libc++abi_so_1 \
+    odm_lib_rfsa_adsp_libinterstellar_skel_so \
+    odm_lib_rfsa_adsp_libktvdrc_so \
+    odm_lib_rfsa_adsp_libktveffect_so \
+    odm_lib_rfsa_adsp_libktveq_so \
+    odm_lib_rfsa_adsp_libktvns_so \
+    odm_lib_rfsa_adsp_libktvpitchshift_so \
+    odm_lib_rfsa_adsp_libktvreverb_so \
+    odm_lib_rfsa_adsp_libktvvolume_so \
     CACertService \
     CneApp \
     IWlanService \
     TimeService \
     PowerOffAlarm \
+    HotwordEnrollmentOKGoogleHEXAGON \
     ImsRcsService \
     QtiTelephonyService \
-    WfdService \
     dpmserviceapp \
     ims \
     qcrilmsgtunnel \
-    WfdCommon \
+    com.android.hotwordenrollment.common.util \
     com.qti.dpmframework \
     dpmapi \
     oplus-ims-ext \
@@ -1739,7 +1703,6 @@ PRODUCT_PACKAGES += \
     xtwifi-inet-agent \
     dpmd \
     tcmd \
-    wfdservice \
     android.hardware.drm@1.3-service.widevine \
     vendor.oplus.hardware.biometrics.fingerprint@2.1-service \
     vendor.oplus.hardware.oplusSensor@1.0-service \
@@ -1755,7 +1718,6 @@ PRODUCT_PACKAGES += \
     vendor_lib64_libipebpsstriping_so \
     system_ext_priv-app_ims_lib_arm64_libimscamera_jni_so \
     system_ext_priv-app_ims_lib_arm64_libimsmedia_jni_so \
-    system_ext_priv-app_WfdService_lib_arm64_libwfdnative_so \
     odm_etc_acdbdata_adsp_avs_config_acdb \
     vendor_lib_libEGL_adreno_so \
     vendor_lib_libGLESv2_adreno_so \
@@ -1763,6 +1725,3 @@ PRODUCT_PACKAGES += \
     vendor_lib64_libEGL_adreno_so \
     vendor_lib64_libGLESv2_adreno_so \
     vendor_lib64_libq3dtools_adreno_so
-
-PRODUCT_BOOT_JARS += \
-    WfdCommon
