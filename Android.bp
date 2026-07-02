@@ -18647,6 +18647,88 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libAlgoInterface",
+    owner: "realme",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/odm/lib64/libAlgoInterface.so",
+            ],
+            shared_libs: [
+                "vendor.qti.hardware.camera.postproc@1.0",
+                "libqdMetaData",
+                "liblog",
+                "libcutils",
+                "libutils",
+                "libmpbase",
+                "libGLESv3",
+                "libEGL",
+                "libnativewindow",
+                "libhidlbase",
+                "libAlgoProcess",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    device_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libAlgoProcess",
+    owner: "realme",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/odm/lib64/libAlgoProcess.so",
+            ],
+            shared_libs: [
+                "android.hardware.graphics.mapper@4.0",
+                "android.hardware.graphics.common-V6-ndk",
+                "libgralloctypes",
+                "libqdMetaData",
+                "vendor.qti.hardware.display.mapper@4.0",
+                "libgralloc.qti",
+                "vendor.qti.hardware.camera.postproc@1.0",
+                "libosenseaidlhalclient",
+                "vendor.oplus.hardware.osense.client-V1-ndk_platform",
+                "libion",
+                "libapsjpeg",
+                "libapsexif",
+                "liblog",
+                "libcutils",
+                "libutils",
+                "libutilscallstack",
+                "libmpbase",
+                "libGLESv3",
+                "libEGL",
+                "libnativewindow",
+                "libhidlbase",
+                "libselinux",
+                "libexif-jpeg-aps",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    device_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libAncFilter",
     owner: "realme",
     strip: {
@@ -19431,6 +19513,35 @@ cc_prebuilt_library_shared {
                 "libm",
                 "libdl",
                 "libc",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    device_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libPreviewDecisionOld",
+    owner: "realme",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/odm/lib64/libPreviewDecisionOld.so",
+            ],
+            shared_libs: [
+                "libAlgoProcess",
+                "libAlgoInterface",
+                "liblog",
+                "libcutils",
+                "libutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
             ],
         },
     },

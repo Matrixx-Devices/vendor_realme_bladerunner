@@ -1453,6 +1453,8 @@ PRODUCT_PACKAGES += \
     vendor.qti.esepowermanager@1.1-impl \
     lib-virtual-modem-protos \
     lib2DSlender \
+    libAlgoInterface \
+    libAlgoProcess \
     libAncFilter \
     libAncHumBokeh \
     libAncHumBokehPost \
@@ -1483,6 +1485,7 @@ PRODUCT_PACKAGES += \
     libPerfectlyClearCruxOpt \
     libPlatformValidatorShared \
     libPolarrRender \
+    libPreviewDecisionOld \
     libQnnHtpAltPrepStub \
     libQnnHtpStub \
     libRedeyeReduce \
